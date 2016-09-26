@@ -1,0 +1,44 @@
+﻿{
+  "version": "0.6.3-*",
+  "description": "Blockchain-based anchoring for Openchain.",
+  "authors": [ "Flavien Charlon" ],
+  "copyright": "Copyright \u00A9 2015 Coinprism, Inc.",
+
+  "packOptions": {
+    "owners": [ "Coinprism" ],
+    "projectUrl": "https://www.openchain.org/",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "iconUrl": "https://www.openchain.org/package.png"
+  },
+
+  "buildOptions": {
+    "allowUnsafe": false,
+    "warningsAsErrors": true
+  },
+
+  "dependencies": {
+    "Microsoft.Extensions.Logging.Abstractions": "1.0.0",
+    "NBitcoin": "3.0.0.43",
+    "Openchain.Infrastructure": "0.6.3"
+  },
+
+  "frameworks": {
+    "netstandard1.6": {
+      "dependencies": {
+        "System.Net.Http": "4.1.0"
+      },
+      "imports": [
+        "dotnet5.6",
+        "dnxcore50",
+        "portable-net45+win+wpa81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10"
+      ]
+    },
+
+    "net451": {
+      "frameworkAssemblies": {
+        "System.Net.Http": "4.0.0.0",
+        "System.Collections": "4.0.0.0"
+      }
+    }
+  }
+}
